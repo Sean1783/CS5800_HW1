@@ -7,29 +7,39 @@ public class Main {
 
         Course advancedSoftwareEngineering = new Course("Advanced Software Engineering");
 
-        Instructor instructorOne = advancedSoftwareEngineering.getInstructorOne();
-        instructorOne.setFirstName("Nima");
-        instructorOne.setLastName("Davarpanah");
-        instructorOne.setOfficeNumber("3-2636");
+        advancedSoftwareEngineering.setInstructorOne(
+                "Nima",
+                "Davarpanah",
+                "3-2636");
 
-        Textbook primaryTextbook = advancedSoftwareEngineering.getPrimaryTextbook();
-        primaryTextbook.setTitle("Clean Code");
-        primaryTextbook.setAuthor("Uncle Bob");
-        primaryTextbook.setPublisher("Pearson");
+        advancedSoftwareEngineering.setPrimaryTextbook(
+                "Clean Code",
+                "Uncle Bob",
+                "Pearson");
 
         advancedSoftwareEngineering.print();
 
-        Instructor instructorTwo = advancedSoftwareEngineering.getInstructorOne();
-        instructorTwo.setFirstName("Assistant");
-        instructorTwo.setLastName("Instructor");
-        instructorTwo.setOfficeNumber("4-3747");
+        advancedSoftwareEngineering.setInstructorTwo(
+                "Assistant",
+                "Instructor",
+                "4-3747");
+
+        advancedSoftwareEngineering.setSecondaryTextbook(
+                "Design Patterns",
+                "Gang of Four",
+                "Addison-Wesley Professional");
+
+        advancedSoftwareEngineering.print();
+
+        Instructor instructorOne = advancedSoftwareEngineering.getInstructorOne();
+        advancedSoftwareEngineering.removeInstructorOne();
+        advancedSoftwareEngineering.print();
+        instructorOne.print();
 
         Textbook secondaryTextbook = advancedSoftwareEngineering.getSecondaryTextbook();
-        secondaryTextbook.setTitle("Design Patterns");
-        secondaryTextbook.setAuthor("Gang of Four");
-        secondaryTextbook.setPublisher("Addison-Wesley Professional");
-
-        advancedSoftwareEngineering.printAll();
+        advancedSoftwareEngineering.removeSecondaryTextbook();
+        advancedSoftwareEngineering.print();
+        secondaryTextbook.print();
 
     }
 }
