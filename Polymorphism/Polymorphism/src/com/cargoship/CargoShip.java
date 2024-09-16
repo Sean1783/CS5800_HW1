@@ -2,7 +2,6 @@ package com.cargoship;
 
 import com.ship.Ship;
 
-
 public class CargoShip extends Ship {
 
     private int tonnage;
@@ -26,4 +25,6 @@ public class CargoShip extends Ship {
         System.out.println("Tonnage: " + tonnage);
 
     }
+
+
 }
