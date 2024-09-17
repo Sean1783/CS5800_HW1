@@ -34,4 +34,10 @@ public class Employee {
     public void setSocialSecurityNumber(String socialSecurityNumber) {
         this.socialSecurityNumber = socialSecurityNumber;
     }
+
+    public void printNameAndSSN() {
+        System.out.println(firstName + " " + lastName);
+        System.out.println("SSN: " + socialSecurityNumber);
+    }
+
 }

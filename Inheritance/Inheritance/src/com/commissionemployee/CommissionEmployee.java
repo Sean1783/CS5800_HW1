@@ -31,4 +31,10 @@ public class CommissionEmployee extends Employee {
     public void setGrossSales(int grossSales) {
         this.grossSales = grossSales;
     }
+
+    public void print(){
+        printNameAndSSN();
+        System.out.println("Commission Rate: " + commissionRate);
+        System.out.println("Gross Sales: " + grossSales);
+    }
 }

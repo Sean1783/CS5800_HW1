@@ -18,4 +18,9 @@ public class BaseEmployee extends Employee {
     public void setBaseSalary(double baseSalary) {
         this.baseSalary = baseSalary;
     }
+
+    public void print(){
+        printNameAndSSN();
+        System.out.println("BaseSalary: " + baseSalary);
+    }
 }

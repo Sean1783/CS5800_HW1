@@ -18,4 +18,9 @@ public class SalariedEmployee extends Employee {
     public void setWeeklySalary(int weeklySalary) {
         this.weeklySalary = weeklySalary;
     }
+
+    public void print(){
+        printNameAndSSN();
+        System.out.println("Weekly salary: " + weeklySalary);
+    }
 }

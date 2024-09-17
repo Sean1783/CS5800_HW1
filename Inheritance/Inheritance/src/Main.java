@@ -11,6 +11,7 @@ public class Main {
                 "Jones",
                 "111-11-1111",
                 2500);
+        salariedEmployeeJones.print();
 
         HourlyEmployee hourlyEmployeeSmith = new HourlyEmployee(
                 "Stephanie",
@@ -18,6 +19,7 @@ public class Main {
                 "222-22-2222",
                 25,
                 32);
+        hourlyEmployeeSmith.print();
 
         HourlyEmployee hourlyEmployeeQuinn = new HourlyEmployee(
                 "Mary",
@@ -25,6 +27,7 @@ public class Main {
                 "333-33-3333",
                 19,
                 47);
+        hourlyEmployeeQuinn.print();
 
         CommissionEmployee commissionEmployeeDior = new CommissionEmployee(
                 "Nicole",
@@ -32,18 +35,21 @@ public class Main {
                 "444-44-4444",
                 .15,
                 50000);
+        commissionEmployeeDior.print();
 
         SalariedEmployee salariedEmployeeChanel = new SalariedEmployee(
                 "Renwa",
                 "Chanel",
                 "555-55-5555",
                 1700);
+        salariedEmployeeChanel.print();
 
         BaseEmployee baseEmployeeDavenport = new BaseEmployee(
                 "Mike",
                 "Davenport",
                 "666-66-6666",
                 95000);
+        baseEmployeeDavenport.print();
 
         CommissionEmployee commissionEmployeeVaziri = new CommissionEmployee(
                 "Mahnaz",
@@ -51,5 +57,6 @@ public class Main {
                 "777-77-7777",
                 .22,
                 40000);
+        commissionEmployeeVaziri.print();
     }
 }
